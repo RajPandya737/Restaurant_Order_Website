@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %} Order Page {% endblock %}
+{% block content %} 
+<form method="post">
+    <h3 align="center"> Place Your Order</h3>
+
+
+    <!-- Spaghetti Label and Text Area -->
+    <div class="form-group">
+        <label for="spaghetti">Number of Spaghetti</label>
+        <input type="spaghetti" class="form-control" id="spaghetti" name="spaghetti" placeholder="Number of Spaghetti Dishes"/>
+    </div>
+
+
+    <!-- Pasta Label and Text Area -->
+    <div class="form-group">
+        <label for="pasta">Number of Pasta</label>
+        <input type="pasta" class="form-control" id="pasta" name="pasta" placeholder="Number of Pasta Dishes"/>
+    </div>
+
+    <!-- Ravioli Label and Text Area -->
+    <div class="form-group">
+        <label for="ravioli">Number of Ravioli</label>
+        <input type="ravioli" class="form-control" id="ravioli" name="ravioli" placeholder="Number of Ravioli Dishes"/>
+    </div>
+
+    <!-- Risoto Label and Text Area -->
+    <div class="form-group">
+        <label for="risotto">Number of Risoto</label>
+        <input type="risotto" class="form-control" id="risoto" name="risoto" placeholder="Number of Risoto Dishes"/>
+    </div>
+
+    <!-- Pizza Label and Text Area -->
+    <div class="form-group">
+        <label for="pizza">Number of Pizza</label>
+        <input type="pizza" class="form-control" id="pizza" name="pizza" placeholder="Number of Pizza Dishes"/>
+    </div>
+
+    <p>Estimated Time: {{t}}</p>
+    <p>Price: {{p}}</p>
+
+
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+
+
+
+
+
+</form>
+{% endblock %}
